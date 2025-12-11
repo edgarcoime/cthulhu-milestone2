@@ -4,3 +4,12 @@
 [submodule "filemanager"]
 	path = filemanager
 	url = git@github.com:cthulhu-platform/filemanager.git
+[submodule "auth"]
+	path = auth
+	url = git@github.com:cthulhu-platform/auth.git
+[submodule "gateway"]
+	path = gateway
+	url = git@github.com:cthulhu-platform/gateway.git
+[submodule "client"]
+	path = client
+	url = git@github.com:cthulhu-platform/client.git
