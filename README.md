@@ -68,14 +68,23 @@ The default credentials are:
 - username: _guest_
 - password: _guest_
 
-### 2. Initialize by Starting Services One by One <a name="dev-process"></a>
+### <a name="dev-process">2. Initialize by Starting Services One by One</a>
 
-The project is setup with a combination of make files
-Navigate back to the root of the project with the root Makefile
+The Process to start up the project is a little more involved this time. It involves navigating to each service and running `make dev` to spin up each one individually. This of course assumes that you have the required `.env` files. I cannot post them here because it has secret codes to AWS and oauth secrets.
+
+Spin up the services in the following order:
+
+- RabbitMQ Message Broker (./rabbitmq) (Previous step should be run using docker)
+- Auth Service (./auth)
+- Filemanager Service (./filemanager)
+- Gateway Service (./gateway)
+- Client Frontend Web service (./client)
+
+Navigate to each respective folder and run the `make dev` command.
 
 ```bash
-# Look at root Make to see what is being run
-cat Makefile
+# Navigate inside the service folder with its own Makefile
+cd <service_folder>
 
 # Start dev environment
 make dev
