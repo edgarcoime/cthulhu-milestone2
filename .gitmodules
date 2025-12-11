@@ -1,3 +1,15 @@
 [submodule "common"]
 	path = common
 	url = git@github.com:cthulhu-platform/common.git
+[submodule "auth/MAIN"]
+	path = auth/MAIN
+	url = git@github.com:cthulhu-platform/auth.git
+[submodule "gateway/MAIN"]
+	path = gateway/MAIN
+	url = git@github.com:cthulhu-platform/gateway.git
+[submodule "filemanager/MAIN"]
+	path = filemanager/MAIN
+	url = git@github.com:cthulhu-platform/filemanager.git
+[submodule "client/MAIN"]
+	path = client/MAIN
+	url = git@github.com:cthulhu-platform/client.git
