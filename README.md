@@ -4,17 +4,17 @@
 
 CTHULHU is an anonymous, file sharing platform that lets anyone upload up to 1 GB of files without an account and share a secure URL that expires after 48 hours. Authorized users can extend retention up to 14 days, manage, and delete their uploads on demand, and optionally password-protect shared content. Built on a microservices architecture with a focus on scalability, security, and user privacy.
 
-## Table of contents <a name="toc"></a>
+## <a name="toc">Table of Contents</a>
 
 - [What is CTHULHU](#what-is-cthulhu)
 - [Table of contents](#toc)
 - [How to Populate Submodules](#submodule)
 - [Prerequisites](#prerequisites)
-- [Development Environment](#development-environment)
+- [Development Environment (RECOMMENDED)](#development-environment)
   - [1. Setup RabbitMQ](#1-setup-rabbitmq)
-  - [2. Start by using root Makefile](#2-start-by-using-root-makefile)
+  - [2. Development Startup Process](#dev-process)
   - [3. Test application](#3-test-application)
-- [Docker](#docker)
+- [Docker (Work in Progress)](#docker)
   - [RabbitMQ](#rabbitmq)
   - [Client](#client)
   - [Gateway](#gateway)
@@ -68,7 +68,7 @@ The default credentials are:
 - username: _guest_
 - password: _guest_
 
-### 2. Start by using root Makefile
+### 2. Initialize by Starting Services One by One <a name="dev-process"></a>
 
 The project is setup with a combination of make files
 Navigate back to the root of the project with the root Makefile
